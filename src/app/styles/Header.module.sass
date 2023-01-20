@@ -1,0 +1,36 @@
+.header
+    height: 70px
+    background: #333333
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 0 70px
+
+.header__title
+    font-size: 36px
+    color: #fff
+
+.header__list
+    display: flex
+    align-items: center
+    justify-content: center
+
+.header__list_item
+    padding: 27px 20px
+    cursor: pointer
+    letter-spacing: 0.05em
+    font-weight: 300
+    color: #fff
+    transition: .3s
+    &.active
+        background: #202020
+    &:hover
+        background: #1a1919
+
+@media screen and (max-width: 768px)
+    .header
+        padding: 0 20px
+    .header__list_item
+        padding: 27px 5px
+        font-size: 16px
